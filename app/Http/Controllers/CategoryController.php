@@ -50,6 +50,7 @@ class CategoryController extends Controller
         }else{
             $model=new Category;
             $msg="Category Inserted";
+            $model->status=1;
         }
 
         $model->category_name=$request->post('category_name');
@@ -68,6 +69,26 @@ class CategoryController extends Controller
         $model->delete();
 
         $request->session()->flash('message','Category deleted');
+
+        return redirect('admin/category');
+
+    }
+
+    public function status(Request $request, $status, $id){
+
+        $model=Category::find($id);
+
+        $model->status=$status;
+
+        if($status==1){
+            $msg=$model->category_name." - Category Active";
+        }else{
+            $msg=$model->category_name." - Category Deactive";
+        }
+
+        $model->save();
+
+        $request->session()->flash('message',$msg);
 
         return redirect('admin/category');
 
