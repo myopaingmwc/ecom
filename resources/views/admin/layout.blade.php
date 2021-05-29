@@ -85,6 +85,16 @@
                                 <i class="fas fa-tag"></i>Coupon
                             </a>
                         </li>
+                        <li class="@yield('size_select')">
+                            <a href="{{ url('admin/size') }}">
+                                <i class="fas fa-window-maximize"></i>Size
+                            </a>
+                        </li>
+                        <li class="@yield('color_select')">
+                            <a href="{{ url('admin/color') }}">
+                                <i class="fas fa-tint"></i>Color
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -106,7 +116,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                            <a class="js-acc-btn" href="#">Main Admin</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             
