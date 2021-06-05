@@ -77,9 +77,9 @@ class SizeController extends Controller
         $model->status=$status;
 
         if($status==1){
-            $msg=$model->title." - Size Active";
+            $msg=$model->size." - Size Active";
         }else{
-            $msg=$model->title." - Size Deactive";
+            $msg=$model->size." - Size Deactive";
         }
 
         $model->save();

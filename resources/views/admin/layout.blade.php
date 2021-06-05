@@ -44,6 +44,11 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard
                             </a>
                         </li>
+                        <li class="@yield('product_select')">
+                            <a href="{{ url('admin/product') }}">
+                                <i class="fas fa-list"></i>Product
+                            </a>
+                        </li>
                         <li class="@yield('category_select')">
                             <a href="{{ url('admin/category') }}">
                                 <i class="fas fa-list"></i>Category
@@ -52,6 +57,16 @@
                         <li class="@yield('coupon_select')">
                             <a href="{{ url('admin/coupon') }}">
                                 <i class="fas fa-tag"></i>Coupon
+                            </a>
+                        </li>
+                        <li class="@yield('size_select')">
+                            <a href="{{ url('admin/size') }}">
+                                <i class="fas fa-window-maximize"></i>Size
+                            </a>
+                        </li>
+                        <li class="@yield('color_select')">
+                            <a href="{{ url('admin/color') }}">
+                                <i class="fas fa-tint"></i>Color
                             </a>
                         </li>
                     </ul>
@@ -73,6 +88,11 @@
                         <li class="@yield('dashboard_select')">
                             <a href="{{ url('admin/dashboard') }}">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="@yield('product_select')">
+                            <a href="{{ url('admin/product') }}">
+                                <i class="fas fa-list"></i>Product
                             </a>
                         </li>
                         <li class="@yield('category_select')">

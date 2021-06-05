@@ -77,9 +77,9 @@ class ColorController extends Controller
         $model->status=$status;
 
         if($status==1){
-            $msg=$model->title." - Color Active";
+            $msg=$model->color." - Color Active";
         }else{
-            $msg=$model->title." - Color Deactive";
+            $msg=$model->color." - Color Deactive";
         }
 
         $model->save();
